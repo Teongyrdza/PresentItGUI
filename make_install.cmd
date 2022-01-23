@@ -1,0 +1,1 @@
+pyinstaller src/main.py --paths .venv/lib/python3.9/site-packages;src --add-data "src\presentationMaker\;presentationMaker" --onefile && copy dist\main.exe %1 && rmdir dist /Q/S
